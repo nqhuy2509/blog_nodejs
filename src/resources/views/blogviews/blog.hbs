@@ -1,0 +1,11 @@
+<ul class="blog-post">
+    {{#each blogs}}
+        <li >
+            <h2><a href="/blog/{{this._id}}">
+                {{this.title}}
+            </a></h2>
+            <h4>{{this.author}}</h4>
+            <a class="btn btn-danger" href="/" role="button">Xóa</a>
+        </li>
+    {{/each}}
+</ul>
